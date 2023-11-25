@@ -9,6 +9,9 @@ public class BookService {
     }
 
     public void addBook(Book book){
+        if(book.getPrice() > 400){
+            return;
+        }
         bookRepository.save(book);
     }
 

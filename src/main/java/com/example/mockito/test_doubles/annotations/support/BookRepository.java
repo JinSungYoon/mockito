@@ -1,9 +1,8 @@
-package com.example.mockito.test_doubles.stub;
+package com.example.mockito.test_doubles.annotations.support;
 
 import java.util.List;
 
 public interface BookRepository {
-
     List<Book> findNewBooks(int days);
 
 }
