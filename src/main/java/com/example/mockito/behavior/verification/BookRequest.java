@@ -1,28 +1,18 @@
-package com.example.mockito.test_doubles.annotations.support;
+package com.example.mockito.behavior.verification;
 
 import java.time.LocalDate;
 
-public class Book {
+public class BookRequest {
 
-    private String bookId;
     private String title;
     private int price;
 
     private LocalDate published;
 
-    public Book(String bookId, String title, int price, LocalDate published) {
-        this.bookId = bookId;
+    public BookRequest(String title, int price, LocalDate published) {
         this.title = title;
         this.price = price;
         this.published = published;
-    }
-
-    public String getBookId() {
-        return bookId;
-    }
-
-    public void setBookId(String bookId) {
-        this.bookId = bookId;
     }
 
     public String getTitle() {
@@ -49,5 +39,13 @@ public class Book {
         this.published = published;
     }
 
+    @Override
+    public String toString() {
+        return "BookRequest{" +
+                "title='" + title + '\'' +
+                ", price=" + price +
+                ", published=" + published +
+                '}';
+    }
 
 }

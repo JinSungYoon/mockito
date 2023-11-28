@@ -1,4 +1,4 @@
-package com.example.mockito.test_doubles.annotations.support;
+package com.example.mockito.annotations.support;
 
 import java.util.List;
 
